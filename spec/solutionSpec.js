@@ -64,7 +64,7 @@ describe("solution", function() {
     });
 
     it("works for small numbers", function() {
-      expect(sqrt(0.00000000000000000009)).toBeCloseTo(.0000000003);
+      expect(sqrt(0.00000000000000000009)).toBeCloseTo(.0000000003, 10);
       expect(Math.sqrt).not.toHaveBeenCalled();
     });
   });
